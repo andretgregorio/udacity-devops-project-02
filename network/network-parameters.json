@@ -1,7 +1,7 @@
 [
   {
     "ParameterKey": "EnvironmentName",
-    "ParameterValue": "UdacityDevops_P02"
+    "ParameterValue": "UdacityDevops-P02"
   },
   {
     "ParameterKey": "VpcCIDR",
