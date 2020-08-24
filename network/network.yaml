@@ -1,0 +1,22 @@
+Description: Andre Gregorio - Udacity Devops Nanodegree - Project 02
+
+Parameters:
+  EnvironmentName:
+    Description: The environment name for the project.
+    Type: String
+    Default: UdacityDevops_P02
+
+  VpcCIDR:
+    Description: An IP range (CIDR notation) for this VPC.
+    Type: String
+    Default: 10.0.0.0/16
+
+Resources:
+  VPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: !Ref VpcCIDR
+      EnableDnsHostnames: true
+      Tags:
+        - Key: Name
+          Value: !Ref EnvironmentName
