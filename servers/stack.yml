@@ -50,7 +50,7 @@ Resources:
     Properties:
       GroupDescription: Allow HTTP on port 80 and SSH on port 22
       VpcId:
-        Fn::ImportValue: !Sub "#{EnvironmentName}-VPCID"
+        Fn::ImportValue: !Sub "${EnvironmentName}-VPCID"
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 80
@@ -79,7 +79,7 @@ Resources:
           cd /var/www/html
           aws s3 cp s3://udagram-project/index.html .
           chown -R www-data:www-data .
-      ImageId: ami-06358f49b5839867c
+      ImageId: ami-0a634ae95e11c6f91
       IamInstanceProfile: !Ref Ec2DefaultProfile
       InstanceType: t3.medium
       KeyName: aws-ec2-default
