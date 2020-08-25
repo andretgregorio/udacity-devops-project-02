@@ -1,0 +1,1 @@
+aws s3 cp ./website/index.html s3://udagram-project/indx.html
