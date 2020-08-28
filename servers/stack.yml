@@ -83,7 +83,6 @@ Resources:
       ImageId: ami-003634241a8fcdec0
       IamInstanceProfile: !Ref Ec2DefaultProfile
       InstanceType: t3.micro
-      KeyName: aws-ec2-default
       SecurityGroups:
         - Ref: WebAppSecurityGroup
       BlockDeviceMappings:
